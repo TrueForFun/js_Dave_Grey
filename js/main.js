@@ -1,8 +1,53 @@
+// import playGuitar from "./modules.js";
+// import { shredding as shred, plucking as fingerpicking } from "./modules.js";
+import User from "./user.js";
+import * as Guitars from "./modules.js";
+console.log(Guitars.default());
+console.log(Guitars.shredding());
+console.log(Guitars.plucking());
+const me = new User("hot@gmail.com", "Sergei");
+console.log(me);
+console.log(me.greeting());
+
+//  ForEach()
+import { posts } from "./posts.js";
+
+// posts.forEach((post) => {
+//   console.log(post);
+// });
+
+// const filteredPosts = posts.filter((post) => {
+//   return post.userId === 1;
+// });
+// console.log(filteredPosts);
+
+// const mappedPosts = filteredPosts.map((post) => {
+//   return post.id * 10;
+// });
+// console.log(mappedPosts);
+
+// const reducedPosts = mappedPosts.reduce((sum, post) => {
+//   return sum + post;
+// });
+// console.log(reducedPosts);
+
+// const users = fetch("https://jsonplaceholder.typicode.com/users");
+// console.log(users);
+
+// fetch("https://jsonplaceholder.typicode.com/users")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     data.forEach((user) => {
+//       console.log(user);
+//     });
+//   });
 // DOM - Document Object Model
 
-const view = document.querySelector("#work");
-console.log(view);
-
+// div.addEventListener("click", (event) => {
+//   div.style.backgroundColor = "purple";
+// });
 // const makeError = () => {
 //   let i = 1;
 //   while (i <= 5) {
